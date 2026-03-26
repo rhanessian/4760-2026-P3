@@ -274,7 +274,7 @@ int main (int argc, char *argv[]){
 
 // Increment system clock
 		if (activeWorkers > 0) {
-			nanosecInc = 2500000000 / activeWorkers;
+			nanosecInc = 250000000 / activeWorkers;
 		} 
 		shm->nanoseconds += nanosecInc;
 		if (shm->nanoseconds >= 1000000000) {
